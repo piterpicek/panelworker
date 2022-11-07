@@ -1,0 +1,13 @@
+{
+  "ignoredDependencies": [
+    "spin.js",
+    "doc-ready",
+    "eventEmitter",
+    "eventie",
+    "fizzy-ui-utils",
+    "get-size",
+    "get-style-property",
+    "matches-selector",
+    "outlayer"
+  ]
+}

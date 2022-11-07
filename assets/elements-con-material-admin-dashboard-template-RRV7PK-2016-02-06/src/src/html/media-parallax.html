@@ -1,0 +1,32 @@
+{{ enablePlugins('prettify') }}
+{% set title = "Parallax" %}
+
+{% extends "layouts/application.html" %}
+
+
+{% block content %}
+  {% include "shared/page-title.html" %}
+
+  <div class="parallax-container mnt-17 mnl-17 mnr-17 mb-17">
+    <div class="parallax"><img src="assets/_con/images/image-1.jpg"></div>
+  </div>
+
+  <div class="card-panel">
+    Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.
+  </div>
+
+  <div class="card-panel">
+    <h4>Usage</h4>
+    <pre class="prettyprint linenums no-margin height-auto">
+&lt;div class="parallax-container">
+  &lt;div class="parallax">&lt;img src="assets/_con/images/image-1.jpg">&lt;/div>
+&lt;/div></pre>
+  </div>
+
+  <div class="card parallax-container">
+
+      <div class="parallax"><img src="assets/_con/images/image-2.jpeg"></div>
+
+  </div>
+
+{% endblock %}

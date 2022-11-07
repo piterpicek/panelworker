@@ -1,0 +1,72 @@
+{
+  "root": {
+    "src": "./src",
+    "dest": "./public"
+  },
+
+  "tasks": {
+    "browserSync": {
+      "server": {
+        "baseDir": "public"
+      }
+    },
+
+    "static": {
+      "src": "static",
+      "dest": "./"
+    },
+
+    "js": {
+      "src": "js",
+      "dest": "assets/_con/js",
+      "extensions": ["js"]
+    },
+
+    "css": {
+      "src": "css",
+      "dest": "assets/_con/css",
+      "dest_deploy": "scss",
+      "autoprefixer": {
+        "browsers": ["last 3 version"]
+      },
+      "sass": {
+        "indentedSyntax": true
+      },
+      "extensions": ["sass", "scss", "css"]
+    },
+
+    "html": {
+      "src": "html",
+      "dest": "./",
+      "dataFile": "data/global.json",
+      "htmlmin": {
+        "collapseWhitespace": true
+      },
+      "prettify": {
+        "indent_size": 4,
+        "braceStyle": "collapse",
+        "indentChar": " ",
+        "indentScripts": "keep",
+        "indentSize": 4,
+        "maxPreserveNewlines": 10,
+        "preserveNewlines": true,
+        "unformatted": ["a", "sub", "sup", "b", "i", "u"],
+        "wrapLineLength": 0,
+        "logSuccess": false
+      },
+      "extensions": ["html", "json"],
+      "excludeFolders": ["layouts", "shared", "macros", "data"]
+    },
+
+    "images": {
+      "src": "images",
+      "dest": "assets/_con/images",
+      "src_placeholders": "images-placeholders",
+      "extensions": ["jpg", "png", "svg", "gif"]
+    },
+
+    "zip": {
+      
+    }
+  }
+}

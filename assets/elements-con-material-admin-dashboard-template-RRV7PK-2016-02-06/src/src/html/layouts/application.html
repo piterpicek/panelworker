@@ -1,0 +1,54 @@
+{% from 'macros/helpers.html' import sprite %}
+
+<!DOCTYPE html>
+{{ headerComment | safe }}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="_nK">
+    <link rel="icon" href="assets/_con/images/icon.png">
+
+    <title>{% block title %}Con - Admin Dashboard with Material Design{% endblock %}</title>
+
+    {% include "layouts/head.html" %}
+
+    {% block head %}{% endblock %}
+</head>
+
+<!--
+  Body
+    Options:
+      .boxed - boxed layout for content
+-->
+<body>
+    {% if top_navbar -%}{% include "shared/page-nav.html" %}{%- endif %}
+
+    {% if sidebar -%}{% include "shared/page-sidebar.html" %}{%- endif %}
+
+    {% block before_content %}{% endblock %}
+
+    <!-- Main Content -->
+    <section class="content-wrap">
+        {% block content %}{% endblock %}
+    </section>
+    <!-- /Main Content -->
+
+    {% if search_bar -%}{% include "shared/page-search.html" %}{%- endif %}
+
+    {% if chat -%}{% include "shared/page-chat.html" %}{%- endif %}
+
+    {% if footer_copyright -%}
+        <footer>&copy; 2015 <strong>nK</strong>. All rights reserved. <a href="http://themeforest.net/item/con-material-admin-dashboard-template/10621512?ref=_nK">Purchase</a></footer>
+    {%- endif %}
+
+    <!-- DEMO [REMOVE IT ON PRODUCTION] -->
+    <script type="text/javascript" src="assets/_con/js/_demo.js"></script>
+
+    {% include "layouts/foot.html" %}
+
+    {% block javascript %}{% endblock %}
+</body>
+</html>

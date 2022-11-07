@@ -1,0 +1,68 @@
+{{ enablePlugins('squire,prettify') }}
+{% set title = "Compose" %}
+
+{% extends "layouts/application.html" %}
+
+
+{% block before_content %}
+  <a class="mail-compose-btn btn-floating btn-extra waves-effect waves-light teal tooltipped" href="mail-compose.html" data-tooltip="Send" data-position="left">
+    <i class="mdi-content-send"></i>
+  </a>
+{% endblock %}
+
+
+{% block content %}
+  {% include "shared/page-title.html" %}
+  
+  <div class="row mail-inbox">
+    <div class="col s12 m4 l2">
+      <div class="card-panel">
+        {% include "shared/mail-sidebar.html" %}
+      </div>
+    </div>
+    <div class="col s12 m8 l10">
+      <div class="card-panel">
+        <form action="#!">
+          <!-- To -->
+          <div class="input-field">
+            <input id="input_to" type="email" class="validate" value="john.doe@inbox.my" name="to">
+            <label for="input_to">To</label>
+          </div>
+          <!-- /To -->
+
+          <!-- Subject -->
+          <div class="input-field">
+            <input id="input_subject" type="text" class="validate" name="subject">
+            <label for="input_subject">Subject</label>
+          </div>
+          <!-- /Subject -->
+
+          <!-- Message -->
+          <textarea name="message" id="squire-msg">
+            <p>
+            Donec lacinia dignissim elementum. <strong>Aenean sit</strong> amet justo ornare, pharetra nisl eu, ultricies justo. Praesent imperdiet vel augue in posuere. <a href="#!">Pellentesque</a> a consequat risus. Vestibulum cursus nisl aliquet leo viverra, ac placerat felis tempor. Sed in felis sed odio fermentum venenatis vitae ac nulla. Nam quis mollis leo. Etiam in lacus ligula.
+            </p>
+    
+            <p>
+            <a href="#!">Vestibulum</a> enim nunc, rhoncus vitae velit sed, <strong>tempus vulputate</strong> libero. Fusce at sapien elit. Donec maximus et lectus ac convallis. Mauris maximus pretium metus in tempus. Aliquam erat volutpat. Integer et ante eget sapien pulvinar vulputate. Nullam vel enim sed odio fringilla congue. Aliquam pellentesque feugiat purus sed laoreet.
+            </p>
+          </textarea>
+          <!-- /Message -->
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block javascript %}
+  <!-- Squire -->
+  <script>
+    new SquireUI({
+      replace: 'textarea#squire-msg',
+      height: 200,
+      buildPath: 'assets/_con/squire/'
+    });
+  </script>
+{% endblock %}

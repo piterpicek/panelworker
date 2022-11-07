@@ -1,0 +1,121 @@
+{{ enablePlugins('prettify') }}
+{% set title = "Layouts" %}
+
+{% extends "layouts/application.html" %}
+
+
+{% block content %}
+  {% include "shared/page-title.html" %}
+
+  <div class="card-panel">
+    Con has several layouts. You can choose full-width top navbar or full-height sidebar.
+  </div>
+
+  <p>
+     <span class="btn layout-boxed">Toggle Boxed</span> - add <strong>boxed</strong> classname to &lt;body> tag.
+  </p>
+  
+
+  <div class="row">
+    <div class="col l6 s12">
+      <div class="layout-top-fixed card">
+        <div class="layout-side"></div>
+        <div class="layout-top"></div>
+
+        <pre class="prettyprint">
+&lt;body>
+  &lt;nav class="navbar-top">&lt;/nav>
+  &lt;aside class="yaybar">&lt;/aside>
+&lt;/body></pre>
+      </div>
+    </div>
+    <div class="col l6 s12">
+      <div class="layout-left-small card">
+        <div class="layout-side"></div>
+        <div class="layout-top"></div>
+        
+        <pre class="prettyprint">
+&lt;body class="yay-hide">
+  &lt;nav class="navbar-top">&lt;/nav>
+  &lt;aside class="yaybar yay-hide-to-small">&lt;/aside>
+&lt;/body></pre>
+      </div>
+    </div>
+    <div class="col l6 s12">
+      <div class="layout-top-static card">
+        <div class="layout-side"></div>
+        <div class="layout-top"></div>
+
+        <pre class="prettyprint">
+&lt;body>
+  &lt;nav class="navbar-top navbar-static">&lt;/nav>
+  &lt;aside class="yaybar">&lt;/aside>
+&lt;/body></pre>
+      </div>
+    </div>
+    <div class="col l6 s12">
+      <div class="layout-top-static-left-small card">
+        <div class="layout-side"></div>
+        <div class="layout-top"></div>
+
+        <pre class="prettyprint">
+&lt;body class="yay-hide">
+  &lt;nav class="navbar-top navbar-static">&lt;/nav>
+  &lt;aside class="yaybar yay-hide-to-small">&lt;/aside>
+&lt;/body></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col l6 s12">
+      <div class="layout-top-under card">
+        <div class="layout-side"></div>
+        <div class="layout-top"></div>
+
+        <pre class="prettyprint">
+&lt;body>
+  &lt;nav class="navbar-top navbar-under">&lt;/nav>
+  &lt;aside class="yaybar">&lt;/aside>
+&lt;/body></pre>
+      </div>
+    </div>
+    <div class="col l6 s12">
+      <div class="layout-top-under-left-small card">
+        <div class="layout-side"></div>
+        <div class="layout-top"></div>
+
+        <pre class="prettyprint">
+&lt;body class="yay-hide">
+  &lt;nav class="navbar-top navbar-under">&lt;/nav>
+  &lt;aside class="yaybar yay-hide-to-small">&lt;/aside>
+&lt;/body></pre>
+      </div>
+    </div>
+    <div class="col l6 s12">
+      <div class="layout-top-under-static card">
+        <div class="layout-side"></div>
+        <div class="layout-top"></div>
+
+        <pre class="prettyprint">
+&lt;body>
+  &lt;nav class="navbar-top navbar-under navbar-static">&lt;/nav>
+  &lt;aside class="yaybar">&lt;/aside>
+&lt;/body></pre>
+      </div>
+    </div>
+    <div class="col l6 s12">
+      <div class="layout-top-under-static-left-small card">
+        <div class="layout-side"></div>
+        <div class="layout-top"></div>
+
+        <pre class="prettyprint">
+&lt;body class="yay-hide">
+  &lt;nav class="navbar-top navbar-under navbar-static">&lt;/nav>
+  &lt;aside class="yaybar yay-hide-to-small">&lt;/aside>
+&lt;/body></pre>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

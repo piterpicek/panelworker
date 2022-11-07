@@ -1,0 +1,70 @@
+{{ enablePlugins('prettify') }}
+{% set title = "Search Bar" %}
+
+{% extends "layouts/application.html" %}
+
+
+{% block content %}
+  {% include "shared/page-title.html" %}
+
+  <div class="card-panel">
+    By default, all pages Con has a search bar. You can use toggle button from top navbar to open it.
+  </div>
+
+  <div class="card-panel">
+    <h4>Toggle</h4>
+    <div class="row">
+      <div class="col l6 s12">
+        If you want to use custom toggle button, use classname <code>search-bar-toggle</code> like this:
+        <p>
+          <a href="#!" class="btn search-bar-toggle">Open Search Bar</a>
+        </p>
+      </div>
+      <div class="col l6 s12">
+        <pre class="prettyprint linenums no-margin">&lt;a href="#!" class="btn search-bar-toggle">Open Search Bar&lt;/a></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-panel">
+    <h4>Content</h4>
+    <p>You can change default content of search bar.</p>
+    <pre class="prettyprint linenums">
+&lt;div class="search-bar">
+  &lt;form action="#!">
+    &lt;!-- Header -->
+    &lt;a class="search-bar-toggle grey-text text-darken-2" href="#!">&lt;i class="mdi-navigation-close">&lt;/i>&lt;/a>
+    
+    &lt;!-- Search Input -->
+    &lt;div class="input-field">
+      &lt;i class="mdi-action-search prefix">&lt;/i>
+      &lt;input type="text" name="con-search" placeholder="Type to search...">
+    &lt;/div>
+    
+    &lt;h4>Serach results for 'Con'&lt;/h4>
+    
+    &lt;hr>
+    &lt;!-- Search Results -->
+      &lt;div class="search-results">
+
+        &lt;div class="row">
+          &lt;div class="col s12 l4">
+            &lt;h4>Users&lt;/h4>
+
+            &lt;div class="each-result">
+              &lt;img src="assets/_con/images/user2.jpg" alt="Felecia Castro" class="circle photo">
+              &lt;div class="title">Felecia Castro&lt;/div>
+              &lt;div class="label">Content Manager&lt;/div>
+            &lt;/div>
+
+            ...
+          &lt;/div>
+          ...
+        &lt;/div>
+
+    &lt;/div>
+  &lt;/form>
+&lt;/div></pre>
+  </div>
+
+{% endblock %}

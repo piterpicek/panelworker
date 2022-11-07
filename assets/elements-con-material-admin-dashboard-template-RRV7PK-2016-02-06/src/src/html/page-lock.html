@@ -1,0 +1,38 @@
+{% extends "layouts/page.html" %}
+
+{% block content %}
+<section id="lock">
+
+  <!-- Background Bubbles -->
+  <canvas id="bubble-canvas"></canvas>
+  <!-- /Background Bubbles -->
+
+  <!-- Lock Form -->
+  <form action="dashboard.html">
+    <div class="logo">
+      <img src="assets/_con/images/logo-white.png" alt="">
+    </div>
+
+    <div class="card-panel">
+
+      <div class="row">
+        <div class="col m4 s12">
+          <img src="assets/_con/images/user.jpg" alt="">
+        </div>
+        <div class="col m8 s12">
+          <h4>John Doe</h4>
+          <div class="input-field">
+            <i class="fa fa-unlock-alt prefix"></i>
+            <input id="input_password" type="password">
+            <label for="input_password">Password</label>
+          </div>
+          <button class="waves-effect waves-light btn-large z-depth-0 z-depth-1-hover">Unlock</button>
+        </div>
+      </div>    
+
+    </div>
+  </form>
+  <!-- /Lock Form -->
+
+</section>
+{% endblock %}

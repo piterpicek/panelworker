@@ -1,0 +1,40 @@
+{{ enablePlugins('prettify') }}
+{% set title = "Material Box" %}
+
+{% extends "layouts/application.html" %}
+
+
+{% block content %}
+  {% include "shared/page-title.html" %}
+
+  <div class="card-panel">
+    Material box is a material design implementation of the Lightbox plugin. When a user clicks on an image that can be enlarged. Material box centers the image and enlarges it in a smooth, non-jarring manner. To dismiss the image, the user can either click on the image again, scroll away, or press the ESC key.
+  </div>
+
+  <div class="card-panel">
+    <h4>Basic</h4>
+    <div class="row">
+      <div class="col m6 s12">
+        <img class="materialboxed" width="300" src="assets/_con/images/image-1.jpg">
+      </div>
+      <div class="col m6 s12">
+        <pre class="prettyprint linenums no-margin">
+&lt;img class="materialboxed" width="300" src="assets/_con/images/image-1.jpg"></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-panel">
+    <h4>Captions</h4>
+    <div class="row">
+      <div class="col m6 s12">
+        <img class="materialboxed" width="300" data-caption="Aut si rem a me pecuniam in Midiam elit." src="assets/_con/images/image-2.jpeg">
+      </div>
+      <div class="col m6 s12">
+        <pre class="prettyprint linenums no-margin">
+&lt;img class="materialboxed" width="300" data-caption="Aut si rem a me pecuniam in Midiam elit." src="assets/_con/images/image-2.jpeg"></pre>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

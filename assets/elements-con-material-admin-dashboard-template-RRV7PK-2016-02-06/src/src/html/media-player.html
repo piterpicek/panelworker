@@ -1,0 +1,92 @@
+{{ enablePlugins('videojs,prettify') }}
+{% set title = "Player" %}
+
+{% extends "layouts/application.html" %}
+
+
+{% block content %}
+  {% include "shared/page-title.html" %}
+
+  <div class="card-panel">
+    <a href="http://www.videojs.com/">http://www.videojs.com/</a> - Web video player built from the ground up for an HTML5 world. It supports HTML5 and Flash video, as well as YouTube and Vimeo.
+  </div>
+
+  <div class="card-panel">
+    <h4>Video tag</h4>
+    <div class="row">
+      <div class="col m6 s12">
+        <video preload="auto" data-setup='{"width":"100%"}' controls poster="assets/_con/images/video-poster.jpg" class="video-js vjs-default-skin responsive-embed-16x9">
+          <source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+          <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
+          <track kind="captions" src="assets/video.js/captions.vtt" srclang="en" label="English"></track>
+          <p class="vjs-no-js">
+            To view this video please enable JavaScript, and consider upgrading to a web browser
+            that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+          </p>
+        </video>
+      </div>
+      <div class="col m6 s12">
+        <pre class="prettyprint linenums no-margin">
+&lt;video preload="auto" data-setup='{"width":"100%"}' controls poster="assets/_con/images/video-poster.jpg" class="video-js vjs-default-skin responsive-embed-16x9">
+  &lt;source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+  &lt;source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
+  &lt;track kind="captions" src="assets/video.js/captions.vtt" srclang="en" label="English">&lt;/track>
+  &lt;p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a web browser
+    that &lt;a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video&lt;/a>
+  &lt;/p>
+&lt;/video></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-panel">
+    <h4>Audio tag</h4>
+    <div class="row">
+      <div class="col m6 s12">
+        <audio preload="metadata" data-setup='{"width":"100%"}' controls poster="assets/_con/images/image-2.jpeg" class="video-js vjs-default-skin responsive-embed-16x9">
+          <source src="assets/_con/audio/preview.mp3" type="audio/mpeg">
+          Audio tag is not supported :(
+        </audio>
+      </div>
+      <div class="col m6 s12">
+        <pre class="prettyprint linenums no-margin">
+&lt;audio preload="metadata" data-setup='{"width":"100%"}' controls poster="assets/_con/images/image-2.jpeg" class="video-js vjs-default-skin responsive-embed-16x9">
+  &lt;source src="assets/_con/audio/preview.mp3" type="audio/mpeg">
+  Audio tag is not supported :(
+&lt;/audio></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-panel">
+    <h4>Youtube</h4>
+    <div class="row">
+      <div class="col m6 s12">
+        <video preload="auto" src="" data-setup='{"width":"100%", "techOrder":["youtube"], "src":"http://www.youtube.com/watch?v=YE7VzlLtp-4"}' controls poster="assets/_con/images/video-poster-2.jpg" class="video-js vjs-default-skin responsive-embed-16x9">
+        </video>
+      </div>
+      <div class="col m6 s12">
+        <pre class="prettyprint linenums no-margin">
+&lt;video preload="auto" src="" data-setup='{"width":"100%", "techOrder":["youtube"], "src":"http://www.youtube.com/watch?v=YE7VzlLtp-4"}' controls poster="assets/_con/images/video-poster-2.jpg" class="video-js vjs-default-skin responsive-embed-16x9">
+&lt;/video></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-panel">
+    <h4>Vimeo</h4>
+    <div class="row">
+      <div class="col m6 s12">
+        <video preload="auto" src="" data-setup='{"width":"100%", "techOrder":["vimeo"], "src":"https://vimeo.com/63186969"}' controls class="video-js vjs-default-skin responsive-embed-16x9">
+        </video>
+      </div>
+      <div class="col m6 s12">
+        <pre class="prettyprint linenums no-margin">
+&lt;video preload="auto" src="" data-setup='{"width":"100%", "techOrder":["vimeo"], "src":"https://vimeo.com/63186969"}' controls class="video-js vjs-default-skin responsive-embed-16x9">
+&lt;/video></pre>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

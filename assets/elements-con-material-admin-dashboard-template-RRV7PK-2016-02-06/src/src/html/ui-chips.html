@@ -1,0 +1,41 @@
+{{ enablePlugins('prettify') }}
+{% set title = "Chips" %}
+
+{% extends "layouts/application.html" %}
+
+
+{% block content %}
+  {% include "shared/page-title.html" %}
+
+  <div class="card-panel">
+    <div class="row">
+      <div class="col m6 s12">
+        Chips can be used to represent small blocks of information. They are most commonly used either for contacts or for tags.
+        
+        <p>
+          <div class="chip">
+            <img src="assets/_con/images/user4-30x30.jpg" alt="Contact Person">
+            Jane Doe
+          </div>
+          <div class="chip">
+            Tag
+            <i class="mdi-navigation-close material-icons"></i>
+          </div>
+        </p>
+
+      </div>
+      <div class="col m6 s12">
+        <pre class="prettyprint linenums no-margin">
+&lt;div class="chip">
+  &lt;img src="assets/_con/images/user4-30x30.jpg" alt="Contact Person">
+  Jane Doe
+&lt;/div>
+&lt;div class="chip">
+  Tag
+  &lt;i class="mdi-navigation-close material-icons">&lt;/i>
+&lt;/div></pre>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

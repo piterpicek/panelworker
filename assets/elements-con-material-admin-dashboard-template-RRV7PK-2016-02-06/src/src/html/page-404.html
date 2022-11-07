@@ -1,0 +1,15 @@
+{{ enablePlugins('prettify') }}
+{% set title = "Page Not Found" %}
+
+{% extends "layouts/application.html" %}
+
+
+{% block content %}
+  {% include "shared/page-title.html" %}
+
+  <div id="page-message">
+    <h2>404</h2>
+    <h3>Page not Found ;(</h3>
+  </div>
+  
+{% endblock %}

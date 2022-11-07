@@ -1,0 +1,28 @@
+{% from 'macros/helpers.html' import sprite %}
+
+<!DOCTYPE html>
+{{ headerComment | safe }}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="_nK">
+    <link rel="icon" href="assets/_con/images/icon.png">
+
+    <title>{% block title %}Con - Admin Dashboard with Material Design{% endblock %}</title>
+
+    {% include "layouts/head.html" %}
+
+    {% block head %}{% endblock %}
+</head>
+
+<body>
+    {% block content %}{% endblock %}
+
+    {% include "layouts/foot.html" %}
+
+    {% block javascript %}{% endblock %}
+</body>
+</html>

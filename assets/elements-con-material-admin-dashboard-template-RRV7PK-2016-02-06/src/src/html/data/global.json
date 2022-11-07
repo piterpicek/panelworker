@@ -1,0 +1,477 @@
+{
+    "search_bar": true,
+    "chat": true,
+    "top_navbar": true,
+    "sidebar": true,
+    "footer_copyright": true,
+    "sidebar_classes": "yay-shrink yay-hide-to-small yay-gestures",
+
+    "plugins": {
+        "fa_icons": true,
+        "mdi_icons": true,
+        "ion_icons": true,
+        "wi_icons": true,
+
+        "rickshaw": false,
+        "nvd3": false,
+        "flot": false,
+        "sparkline": false,
+
+        "markitup": false,
+        "ckeditor": false,
+        "squire": false,
+
+        "select2": false,
+        "dropzone": false,
+        "tagsinput": false,
+        "clockpicker": false,
+        "pikaday": false,
+        "spectrum": false,
+        "inputmask": false,
+        "parsley": false,
+        "nestable": false,
+        "jstree": false,
+
+        "gmaps": false,
+        "jvectormap": false,
+
+        "datatables": false,
+        "fullcalendar": false,
+        "simpleweather": false,
+        "prettify": true,
+        "animatecss": false,
+        "wowjs": false,
+        "photoswipe": false,
+        "isotope": false,
+        "videojs": false
+    },
+
+    "navigation_ecommerce": {
+        "ecommerce-dashboard.html": {
+            "name": "Dashboard"
+        },
+        "ecommerce-products.html": {
+            "name": "Products"
+        },
+        "ecommerce-orders.html": {
+            "name": "Orders"
+        },
+        "ecommerce-customers.html": {
+            "name": "Customers"
+        },
+        "ecommerce-settings.html": {
+            "name": "Settings"
+        },
+        "ecommerce-pricing-tables.html": {
+            "name": "Pricing"
+        }
+    },
+
+    "navigation": {
+        "angularjs/": {
+            "name": "Open Angular Version",
+            "icon": "ion ion-social-angular"
+        },
+
+
+        "label---1": {
+            "name": "Menu",
+            "label": true
+        },
+        "dashboard.html": {
+            "name": "Dashboards",
+            "icon": "fa fa-dashboard",
+            "sub": {
+                "dashboard.html": {
+                    "name": "Dashboard"
+                },
+                "dashboard-v1.html": {
+                    "name": "Dashboard v1"
+                }
+            }
+        },
+        "widgets.html": {
+            "name": "Widgets",
+            "icon": "fa fa-magic"
+        },
+        "layouts.html": {
+            "name": "Layouts",
+            "icon": "mdi mdi-av-web",
+            "new": true
+        },
+
+
+        "label---2": {
+            "name": "Elements",
+            "label": true
+        },
+        "css-alerts.html": {
+            "name": "CSS",
+            "icon": "fa fa-css3",
+            "sub": {
+                "css-alerts.html": {
+                    "name": "Alerts",
+                    "icon": "mdi-alert-warning"
+                },
+                "css-badges.html": {
+                    "name": "Badges",
+                    "icon": "mdi-action-stars"
+                },
+                "css-colors.html": {
+                    "name": "Colors",
+                    "icon": "mdi-image-palette"
+                },
+                "css-grid.html": {
+                    "name": "Grid",
+                    "icon": "mdi-action-dashboard"
+                },
+                "css-helpers.html": {
+                    "name": "Helpers",
+                    "icon": "mdi-action-help"
+                },
+                "css-icons.html": {
+                    "name": "Icons",
+                    "icon": "mdi-communication-invert-colors-on"
+                },
+                "css-shadow.html": {
+                    "name": "Shadow",
+                    "icon": "mdi-maps-layers"
+                },
+                "css-typography.html": {
+                    "name": "Typography",
+                    "icon": "fa fa-font"
+                }
+            }
+        },
+        "ui-buttons.html": {
+            "name": "UI Elements",
+            "icon": "fa fa-cubes",
+            "sub": {
+                "ui-buttons.html": {
+                    "name": "Buttons",
+                    "icon": "fa fa-square"
+                },
+                "ui-cards.html": {
+                    "name": "Cards",
+                    "icon": "mdi-av-web"
+                },
+                "ui-chips.html": {
+                    "name": "Chips",
+                    "icon": "fa fa-tag",
+                    "new": true
+                },
+                "ui-collapsible.html": {
+                    "name": "Collapsible",
+                    "icon": "mdi-action-view-day"
+                },
+                "ui-collections.html": {
+                    "name": "Collections",
+                    "icon": "fa fa-server"
+                },
+                "ui-dropdown.html": {
+                    "name": "Dropdown",
+                    "icon": "mdi-navigation-arrow-drop-down-circle"
+                },
+                "ui-modals.html": {
+                    "name": "Modals",
+                    "icon": "fa fa-external-link"
+                },
+                "ui-nestable.html": {
+                    "name": "Nestable",
+                    "icon": "fa fa-list",
+                    "new": true
+                },
+                "ui-pagination.html": {
+                    "name": "Pagination",
+                    "icon": "mdi mdi-navigation-more-horiz"
+                },
+                "ui-progress-bars.html": {
+                    "name": "Progress Bars",
+                    "icon": "fa fa-tasks"
+                },
+                "ui-tabs.html": {
+                    "name": "Tabs",
+                    "icon": "mdi-action-tab-unselected"
+                },
+                "ui-toasts.html": {
+                    "name": "Toasts",
+                    "icon": "mdi-action-announcement"
+                },
+                "ui-tooltips.html": {
+                    "name": "Tooltips",
+                    "icon": "fa fa-comment-o"
+                },
+                "ui-tree-view.html": {
+                    "name": "Tree View",
+                    "icon": "fa fa-list",
+                    "new": true
+                },
+                "ui-waves.html": {
+                    "name": "Waves",
+                    "icon": "mdi-image-blur-on"
+                },
+                "ui-search-bar.html": {
+                    "name": "Search Bar",
+                    "icon": "mdi-action-search"
+                }
+            }
+        },
+        "media-hover-effects.html": {
+            "name": "Media",
+            "icon": "mdi mdi-image-panorama",
+            "sub": {
+                "media-hover-effects.html": {
+                    "name": "Hover Effects",
+                    "icon": "mdi mdi-image-style"
+                },
+                "media-scroll-effects.html": {
+                    "name": "Scroll Effects",
+                    "icon": "fa fa-magic"
+                },
+                "media-gallery.html": {
+                    "name": "Gallery",
+                    "icon": "mdi mdi-image-collections"
+                },
+                "media-material-box.html": {
+                    "name": "Material Box",
+                    "icon": "mdi mdi-image-collections"
+                },
+                "media-parallax.html": {
+                    "name": "Parallax",
+                    "icon": "mdi mdi-image-panorama"
+                },
+                "media-player.html": {
+                    "name": "Player",
+                    "icon": "mdi mdi-av-play-circle-outline"
+                },
+                "media-slider.html": {
+                    "name": "Slider",
+                    "icon": "mdi mdi-action-view-carousel"
+                }
+            }
+        },
+
+
+        "label---3": {
+            "name": "Components",
+            "label": true
+        },
+        "forms-base.html": {
+            "name": "Forms",
+            "icon": "fa fa-check-square-o",
+            "sub": {
+                "forms-base.html": {
+                    "name": "Base",
+                    "icon": "fa fa-cube"
+                },
+                "forms-advanced.html": {
+                    "name": "Advanced",
+                    "icon": "fa fa-cubes"
+                },
+                "forms-validation.html": {
+                    "name": "Validation",
+                    "icon": "fa fa-check-square-o"
+                },
+                "forms-editors.html": {
+                    "name": "Editors",
+                    "icon": "fa fa-edit"
+                },
+                "forms-checkout.html": {
+                    "name": "Checkout"
+                },
+                "forms-contacts.html": {
+                    "name": "Contacts"
+                },
+                "forms-login.html": {
+                    "name": "Login"
+                },
+                "forms-register.html": {
+                    "name": "Register"
+                }
+            }
+        },
+        "page-profile.html": {
+            "name": "Pages",
+            "icon": "fa fa-globe",
+            "sub": {
+                "page-profile.html": {
+                    "name": "Profile"
+                },
+                "page-timeline.html": {
+                    "name": "Timeline"
+                },
+                "page-calendar.html": {
+                    "name": "Calendar"
+                },
+                "page-forgot-password.html": {
+                    "name": "Forgot Password"
+                },
+                "page-lock.html": {
+                    "name": "Screen Lock"
+                },
+                "page-sign-in.html": {
+                    "name": "Sign In"
+                },
+                "page-sign-up.html": {
+                    "name": "Sign Up"
+                },
+                "page-404.html": {
+                    "name": "404"
+                },
+                "page-500.html": {
+                    "name": "500"
+                },
+                "page-blank.html": {
+                    "name": "Blank"
+                }
+            }
+        },
+
+
+        "label---4": {
+            "name": "Extra",
+            "label": true
+        },
+        "mail-inbox.html": {
+            "name": "Mailbox",
+            "icon": "fa fa-envelope",
+            "sub": {
+                "mail-inbox.html": {
+                    "name": "Inbox",
+                    "icon": "mdi-content-inbox"
+                },
+                "mail-compose.html": {
+                    "name": "Compose",
+                    "icon": "mdi-content-add-circle"
+                },
+                "mail-view.html": {
+                    "name": "View",
+                    "icon": "mdi-content-drafts"
+                }
+            }
+        },
+        "ecommerce-dashboard.html": {
+            "name": "eCommerce",
+            "icon": "mdi mdi-action-shopping-cart",
+            "sub": {
+                "ecommerce-dashboard.html": {
+                    "name": "Dashboard",
+                    "icon": "fa fa-dashboard"
+                },
+                "ecommerce-products.html": {
+                    "name": "Products",
+                    "icon": "fa fa-tags"
+                },
+                "ecommerce-product-single.html": {
+                    "name": "Product Single",
+                    "icon": "fa fa-tag"
+                },
+                "ecommerce-orders.html": {
+                    "name": "Orders",
+                    "icon": "fa fa-cart-plus"
+                },
+                "ecommerce-order-single.html": {
+                    "name": "Order Single",
+                    "icon": "fa fa-cart-plus"
+                },
+                "ecommerce-customers.html": {
+                    "name": "Customers",
+                    "icon": "fa fa-users"
+                },
+                "ecommerce-settings.html": {
+                    "name": "Settings",
+                    "icon": "fa fa-cog"
+                },
+                "ecommerce-invoice.html": {
+                    "name": "Invoice",
+                    "icon": "ion ion-android-list"
+                },
+                "ecommerce-pricing-tables.html": {
+                    "name": "Pricing Tables",
+                    "icon": "fa fa-money"
+                }
+            }
+        },
+        "charts-flot.html": {
+            "name": "Charts",
+            "icon": "fa fa-bar-chart",
+            "sub": {
+                "charts-flot.html": {
+                    "name": "Flot"
+                },
+                "charts-rickshaw.html": {
+                    "name": "Rickshaw"
+                },
+                "charts-sparkline.html": {
+                    "name": "Sparkline"
+                },
+                "charts-nvd3.html": {
+                    "name": "NVD3"
+                }
+            }
+        },
+        "maps-google.html": {
+            "name": "Maps",
+            "icon": "mdi mdi-maps-place",
+            "sub": {
+                "maps-google.html": {
+                    "name": "Google Maps"
+                },
+                "maps-vector.html": {
+                    "name": "Vector Maps"
+                }
+            }
+        },
+        "ui-tables.html": {
+            "name": "Tables",
+            "icon": "fa fa-table",
+            "sub": {
+                "ui-tables.html": {
+                    "name": "Base Tables"
+                },
+                "ui-datatables.html": {
+                    "name": "Data Tables"
+                }
+            }
+        },
+        "#": {
+            "name": "Menu Levels",
+            "icon": "fa fa-indent",
+            "sub": {
+                "#": {
+                    "name": "Second Level",
+                    "sub": {
+                        "#1": {
+                            "name": "Third Level",
+                            "sub": {
+                                "#1": {
+                                    "name": "Fourth Level"
+                                },
+                                "#2": {
+                                    "name": "Fourth Level"
+                                },
+                                "#3": {
+                                    "name": "Fourth Level"
+                                }
+                            }
+                        },
+                        "#2": {
+                            "name": "Third Level",
+                            "sub": {
+                                "#1": {
+                                    "name": "Fourth Level"
+                                },
+                                "#2": {
+                                    "name": "Fourth Level"
+                                },
+                                "#3": {
+                                    "name": "Fourth Level"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,112 @@
+{{ enablePlugins('squire,ckeditor,markitup,prettify') }}
+{% set title = "Editors" %}
+
+{% extends "layouts/application.html" %}
+
+
+{% block content %}
+  {% include "shared/page-title.html" %}
+
+  <!-- Squire -->
+  <div class="card-panel">
+    <h4>Squire</h4>
+    Con uses <strong>Squire</strong>. Full documentation and examples you can see here - <a href="http://neilj.github.io/Squire/">http://neilj.github.io/Squire/</a>
+
+    <div class="row">
+      <div class="col l5 m12">
+        <textarea id="squire1">
+          <h3>Default Value</h3>
+          <p>Default text</p>
+        </textarea>
+      </div>
+      <div class="col l7 m12">
+        <pre class="prettyprint linenums no-margin">
+&lt;textarea id="squire1">
+  &lt;h3>Default Value&lt;/h3>
+  &lt;p>Default text&lt;/p>
+&lt;/textarea>
+
+&lt;!-- Squire -->
+&lt;script>
+  new SquireUI({
+    replace: 'textarea#squire1',
+    height: 200,
+    buildPath: 'assets/_con/squire/'
+  });
+&lt;/script></pre>
+      </div>
+    </div>
+  </div>
+  <!-- /Squire -->
+
+  <!-- CKEditor -->
+  <div class="card-panel">
+    <h4>CKEditor</h4>
+    Con uses <strong>CKEditor</strong>. Full documentation and examples you can see here - <a href="http://ckeditor.com/">http://ckeditor.com/</a>
+
+    <div class="row">
+      <div class="col l5 m12">
+        <textarea id="ckeditor1"></textarea>
+
+        <br>
+
+        <h4 id="ckeditor2" contenteditable="true">Inline CKEditor</h4>
+        <div id="ckeditor3" contenteditable="true">
+          <strong>Lorem ipsum</strong>, consectetur <i>adipisicing elit</i>. Dolorum sit quia rem, iste fuga quas <del>suscipit rerum blanditiis</del>, voluptatum voluptatibus minima sequi iure unde eum quam nesciunt voluptatem, qui illo.
+        </div>
+      </div>
+      <div class="col l7 m12">
+        <pre class="prettyprint linenums no-margin">
+&lt;textarea id="ckeditor1">&lt;/textarea>
+&lt;div id="ckeditor2">Inline Text Editing&lt;/div>
+
+&lt;script>
+  CKEDITOR.replace( 'ckeditor1' );
+  CKEDITOR.inline( 'ckeditor2' );
+&lt;/script></pre>
+      </div>
+    </div>
+  </div>
+  <!-- /CKEditor -->
+
+  <!-- MarkItUp -->
+  <div class="card-panel">
+    <h4>MarkItUp</h4>
+    Con uses <strong>MarkItUp</strong>. Full documentation and examples you can see here - <a href="http://markitup.jaysalvat.com/home/">http://markitup.jaysalvat.com/home/</a>
+
+    <div class="row">
+      <div class="col l5 m12">
+        <textarea class="markItUp"></textarea>
+      </div>
+      <div class="col l7 m12">
+        <pre class="prettyprint linenums no-margin">
+&lt;textarea class="markItUp">&lt;/textarea>
+
+&lt;link rel="stylesheet" type="text/css" href="assets/markitup/skins/_con/style.css" />
+&lt;link rel="stylesheet" type="text/css" href="assets/markitup/sets/default/style.css" />
+&lt;script type="text/javascript" src="assets/markitup/sets/default/set.js">&lt;/script>
+&lt;script type="text/javascript" src="assets/markitup/jquery.markitup.js">&lt;/script></pre>
+      </div>
+    </div>
+  </div>
+  <!-- /MarkItUp -->
+
+{% endblock %}
+
+{% block javascript %}
+  <!-- Squire -->
+  <script>
+    new SquireUI({
+      replace: 'textarea#squire1',
+      height: 200,
+      buildPath: 'assets/_con/squire/'
+    });
+  </script>
+
+  <!-- CKEditor -->
+  <script>
+    CKEDITOR.replace( 'ckeditor1' );
+    CKEDITOR.inline( 'ckeditor2' );
+    CKEDITOR.inline( 'ckeditor3' );
+  </script>
+{% endblock %}

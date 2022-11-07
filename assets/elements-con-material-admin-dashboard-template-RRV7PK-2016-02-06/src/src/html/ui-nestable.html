@@ -1,0 +1,150 @@
+{{ enablePlugins('nestable,prettify') }}
+{% set title = "Nestable" %}
+
+{% extends "layouts/application.html" %}
+
+
+{% block content %}
+  {% include "shared/page-title.html" %}
+
+  <div class="card-panel">
+    <a href="http://dbushell.github.io/Nestable/">http://dbushell.github.io/Nestable/</a> - drag &amp; drop hierarchical list with mouse and touch compatibility (jQuery plugin)
+  </div>
+
+  <div class="card-panel">
+    <h4>Basic</h4>
+    <div class="row">
+      <div class="col m6 s12">
+        <div class="dd">
+          <ol class="dd-list">
+            <li class="dd-item" data-id="1">
+              <div class="dd-handle">Item 1</div>
+            </li>
+            <li class="dd-item" data-id="2">
+              <div class="dd-handle">Item 2</div>
+              <ol class="dd-list">
+                <li class="dd-item" data-id="3"><div class="dd-handle">Item 3</div></li>
+                <li class="dd-item" data-id="4"><div class="dd-handle">Item 4</div></li>
+                <li class="dd-item" data-id="5">
+                  <div class="dd-handle">Item 5</div>
+                  <ol class="dd-list">
+                    <li class="dd-item" data-id="6"><div class="dd-handle">Item 6</div></li>
+                    <li class="dd-item" data-id="7"><div class="dd-handle">Item 7</div></li>
+                    <li class="dd-item" data-id="8"><div class="dd-handle">Item 8</div></li>
+                  </ol>
+                </li>
+                <li class="dd-item" data-id="9"><div class="dd-handle">Item 9</div></li>
+                <li class="dd-item" data-id="10"><div class="dd-handle">Item 10</div></li>
+              </ol>
+            </li>
+            <li class="dd-item" data-id="11">
+              <div class="dd-handle">Item 11</div>
+            </li>
+            <li class="dd-item" data-id="12">
+              <div class="dd-handle">Item 12</div>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="col m6 s12">
+        <pre class="prettyprint linenums">
+&lt;div class="dd">
+  &lt;ol class="dd-list">
+    &lt;li class="dd-item" data-id="1">
+      &lt;div class="dd-handle">Item 1&lt;/div>
+    &lt;/li>
+    &lt;li class="dd-item" data-id="2">
+      &lt;div class="dd-handle">Item 2&lt;/div>
+      &lt;ol class="dd-list">
+        &lt;li class="dd-item" data-id="3">&lt;div class="dd-handle">Item 3&lt;/div>&lt;/li>
+        &lt;li class="dd-item" data-id="4">&lt;div class="dd-handle">Item 4&lt;/div>&lt;/li>
+        &lt;li class="dd-item" data-id="5">
+          &lt;div class="dd-handle">Item 5&lt;/div>
+          &lt;ol class="dd-list">
+            &lt;li class="dd-item" data-id="6">&lt;div class="dd-handle">Item 6&lt;/div>&lt;/li>
+            &lt;li class="dd-item" data-id="7">&lt;div class="dd-handle">Item 7&lt;/div>&lt;/li>
+            &lt;li class="dd-item" data-id="8">&lt;div class="dd-handle">Item 8&lt;/div>&lt;/li>
+          &lt;/ol>
+        &lt;/li>
+        &lt;li class="dd-item" data-id="9">&lt;div class="dd-handle">Item 9&lt;/div>&lt;/li>
+        &lt;li class="dd-item" data-id="10">&lt;div class="dd-handle">Item 10&lt;/div>&lt;/li>
+      &lt;/ol>
+    &lt;/li>
+    &lt;li class="dd-item" data-id="11">
+      &lt;div class="dd-handle">Item 11&lt;/div>
+    &lt;/li>
+    &lt;li class="dd-item" data-id="12">
+      &lt;div class="dd-handle">Item 12&lt;/div>
+    &lt;/li>
+  &lt;/ol>
+&lt;/div></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-panel">
+    <h4>Draggable Handles</h4>
+    <div class="row">
+      <div class="col m6 s12">
+        <div class="dd">
+          <ol class="dd-list">
+            <li class="dd-item dd3-item" data-id="13">
+              <div class="dd-handle dd3-handle">Drag</div><div class="dd3-content">Item 13</div>
+            </li>
+            <li class="dd-item dd3-item" data-id="14">
+              <div class="dd-handle dd3-handle">Drag</div><div class="dd3-content">Item 14</div>
+            </li>
+            <li class="dd-item dd3-item" data-id="15">
+              <div class="dd-handle dd3-handle">Drag</div><div class="dd3-content">Item 15</div>
+              <ol class="dd-list">
+                <li class="dd-item dd3-item" data-id="16">
+                  <div class="dd-handle dd3-handle">Drag</div><div class="dd3-content">Item 16</div>
+                </li>
+                <li class="dd-item dd3-item" data-id="17">
+                  <div class="dd-handle dd3-handle">Drag</div><div class="dd3-content">Item 17</div>
+                </li>
+                <li class="dd-item dd3-item" data-id="18">
+                  <div class="dd-handle dd3-handle">Drag</div><div class="dd3-content">Item 18</div>
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="col m6 s12">
+        <pre class="prettyprint linenums">
+&lt;div class="dd">
+  &lt;ol class="dd-list">
+    &lt;li class="dd-item dd3-item" data-id="13">
+      &lt;div class="dd-handle dd3-handle">Drag&lt;/div>&lt;div class="dd3-content">Item 13&lt;/div>
+    &lt;/li>
+    &lt;li class="dd-item dd3-item" data-id="14">
+      &lt;div class="dd-handle dd3-handle">Drag&lt;/div>&lt;div class="dd3-content">Item 14&lt;/div>
+    &lt;/li>
+    &lt;li class="dd-item dd3-item" data-id="15">
+      &lt;div class="dd-handle dd3-handle">Drag&lt;/div>&lt;div class="dd3-content">Item 15&lt;/div>
+      &lt;ol class="dd-list">
+        &lt;li class="dd-item dd3-item" data-id="16">
+          &lt;div class="dd-handle dd3-handle">Drag&lt;/div>&lt;div class="dd3-content">Item 16&lt;/div>
+        &lt;/li>
+        &lt;li class="dd-item dd3-item" data-id="17">
+          &lt;div class="dd-handle dd3-handle">Drag&lt;/div>&lt;div class="dd3-content">Item 17&lt;/div>
+        &lt;/li>
+        &lt;li class="dd-item dd3-item" data-id="18">
+          &lt;div class="dd-handle dd3-handle">Drag&lt;/div>&lt;div class="dd3-content">Item 18&lt;/div>
+        &lt;/li>
+      &lt;/ol>
+    &lt;/li>
+  &lt;/ol>
+&lt;/div></pre>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block javascript %}
+  <script>
+    $('.dd').nestable();
+  </script>
+{% endblock %}

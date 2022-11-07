@@ -1,0 +1,15 @@
+{{ enablePlugins('prettify') }}
+{% set title = "Internal Server Error" %}
+
+{% extends "layouts/application.html" %}
+
+
+{% block content %}
+  {% include "shared/page-title.html" %}
+
+  <div id="page-message">
+    <h2>500</h2>
+    <h3>Internal Server Error</h3>
+  </div>
+
+{% endblock %}
